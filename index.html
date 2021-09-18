@@ -5,27 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "theme-color" content = "#4dbaa8"/>
-    <link rel="shortcut icon" href="https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Fapple-touch-icon.png?v=1566861131254">
-    <link rel = "manifest" href = "manifest.json">
+    <meta name="theme-color" content="#4dbaa8" />
+    <link rel="shortcut icon"
+        href="https://cdn.glitch.com/49d34dc6-8fbd-46bb-8221-b99ffd36f1af%2Fapple-touch-icon.png?v=1566861131254">
+    <link rel="manifest" href="manifest.json">
     <title>Souvik Roy's Personal Portflio Website</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.convform.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./css/style.css">
 
     <script>
-        if('serviceWorker' in navigator) {
+        if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js');
         };
-    
+
     </script>
 
 </head>
 
 <body>
+
+    <!-- ChatBot -->
+    <div class="chat_icon">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+    </div>
+
+    <div class="chat_box">
+        <div class="my-conv-form-wrapper">
+            <form action="" method="GET" class="hidden">
+
+                <select data-conv-question="Hello! How can I help you" name="category">
+                    <option value="WebDevelopment">Website Development ?</option>
+                    <option value="DigitalMarketing">Digital Marketing ?</option>
+                </select>
+
+                <div data-conv-fork="category">
+                    <div data-conv-case="WebDevelopment">
+                        <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">
+                    </div>
+                    <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+                        <input type="text" name="companyName" data-conv-question="Please, enter your company name">
+                    </div>
+                </div>
+
+                <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+                <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you."
+                    data-no-answer="true">
+
+                <input data-conv-question="Enter your e-mail"
+                    data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                    type="email" name="email" required placeholder="What's your e-mail?">
+
+                <select data-conv-question="Please Conform and reach the contact section!">
+                    <option value="Yes">Conform</option>
+                </select>
+
+            </form>
+        </div>
+    </div>
+    <!-- ChatBot end -->
 
     <!-- custom cursors  -->
     <div class="cursor-1"></div>
@@ -68,8 +116,9 @@
             <span class="hi"> hi there... </span>
             <h3> I am <span> Souvik Roy </span> </h3>
             <p class="info"> i am a full-stack developer and ML Enthusiast</p>
-            <p class="text"> 
-                Hello friends fellow coders this is your tech geek and budding enterpreneur Souvik Roy. If you wanna work with me then I'm just one mail away. As for veryfuing my work, I'm just one click away. 
+            <p class="text">
+                Hello friends fellow coders this is your tech geek and budding enterpreneur Souvik Roy. If you wanna
+                work with me then I'm just one mail away. As for veryfuing my work, I'm just one click away.
             </p>
             <a href="https://www.linkedin.com/in/souvik-roy-975193186/" class="btn">about me</a>
         </div>
@@ -95,8 +144,11 @@
             </div>
 
             <div class="content">
-                <h3> my name is Souvik Roy & I am a full-stack developer with a kink for Data Science and Machine Learning </h3>
-                <p>Talking of my niche and skills, being an author, a technical blogger and an engineering student and research enthusiast, I'm perhaps one of the most updated tech geeks you'll ever meet. I'm also a National debate champion and hence possess a great blend of soft skills as well. </p>
+                <h3> my name is Souvik Roy & I am a full-stack developer with a kink for Data Science and Machine
+                    Learning </h3>
+                <p>Talking of my niche and skills, being an author, a technical blogger and an engineering student and
+                    research enthusiast, I'm perhaps one of the most updated tech geeks you'll ever meet. I'm also a
+                    National debate champion and hence possess a great blend of soft skills as well. </p>
                 <div class="box-container">
                     <div class="box">
                         <p> <span> age : </span> 20 </p>
@@ -107,12 +159,13 @@
                     <div class="box">
                         <p> <span> freelance : </span> available </p>
                         <p> <span> phone : </span> (+91)8697568248 </p>
-                        <p class = "hell"> <span> email : </span> divinedigits69@gmail.com </p>
+                        <p class="hell"> <span> email : </span> divinedigits69@gmail.com </p>
                         <p> <span> country : </span> india </p>
                         <p> <span> state : </span> West Bengal </p>
                     </div>
                 </div>
-                <a href="https://drive.google.com/file/d/18D0YtPFabJea4AmVEStXMJOknwYJnnkR/view?usp=sharing" class="btn">download CV</a>
+                <a href="https://drive.google.com/file/d/18D0YtPFabJea4AmVEStXMJOknwYJnnkR/view?usp=sharing"
+                    class="btn">download CV</a>
                 <a href="#contact" class="btn">hire me</a>
             </div>
 
@@ -179,7 +232,8 @@
             <div class="box">
                 <i class="fas fa-code"></i>
                 <h3>web design</h3>
-                <p>whether you want a beautiful UI or front end or full-stack, I got you covered. I can give you a fast loaded PHP website or a trendy react website.</p>
+                <p>whether you want a beautiful UI or front end or full-stack, I got you covered. I can give you a fast
+                    loaded PHP website or a trendy react website.</p>
             </div>
 
             <div class="box">
@@ -197,7 +251,8 @@
             <div class="box">
                 <i class="fas fa-bullhorn"></i>
                 <h3>seo optimization and data science</h3>
-                <p>Get your data monitored and utilised the right way. Get the most advanced analytical report and ML models to predict your successful monetary journey!</p>
+                <p>Get your data monitored and utilised the right way. Get the most advanced analytical report and ML
+                    models to predict your successful monetary journey!</p>
             </div>
 
             <div class="box">
@@ -262,7 +317,8 @@
                 <div class="content">
                     <span> 2021 </span>
                     <h3>Enterpreneurship</h3>
-                    <p>Working on three major startups, most notably <a href = "https://thedivineacademy.winuall.com/">the Divine Academy</a></p>
+                    <p>Working on three major startups, most notably <a href="https://thedivineacademy.winuall.com/">the
+                            Divine Academy</a></p>
                 </div>
             </div>
 
@@ -302,9 +358,12 @@
                 <img src="images/img-2.jpg" alt="">
                 <h3> Full Stack - PHP </h3>
                 <div class="icons">
-                    <a href="https://github.com/Souvik1406/The-Sparks-Foundation-Basic-Banking-System-Internship-Project" class="fas fa-link"></a>
-                    <a href="https://github.com/Souvik1406/The-Sparks-Foundation-Basic-Banking-System-Internship-Project" class="fas fa-share"></a>
-                    <a href="https://github.com/Souvik1406/The-Sparks-Foundation-Basic-Banking-System-Internship-Project" class="fas fa-search"></a>
+                    <a href="https://github.com/Souvik1406/The-Sparks-Foundation-Basic-Banking-System-Internship-Project"
+                        class="fas fa-link"></a>
+                    <a href="https://github.com/Souvik1406/The-Sparks-Foundation-Basic-Banking-System-Internship-Project"
+                        class="fas fa-share"></a>
+                    <a href="https://github.com/Souvik1406/The-Sparks-Foundation-Basic-Banking-System-Internship-Project"
+                        class="fas fa-search"></a>
                 </div>
             </div>
 
@@ -312,9 +371,12 @@
                 <img src="images/img-3.jpg" alt="">
                 <h3> ML Analysis </h3>
                 <div class="icons">
-                    <a href="https://github.com/Souvik1406/Machine-Learning-Project-1-Real-Estate-Evaluation" class="fas fa-link"></a>
-                    <a href="https://github.com/Souvik1406/Machine-Learning-Project-1-Real-Estate-Evaluation" class="fas fa-share"></a>
-                    <a href="https://github.com/Souvik1406/Machine-Learning-Project-1-Real-Estate-Evaluation" class="fas fa-search"></a>
+                    <a href="https://github.com/Souvik1406/Machine-Learning-Project-1-Real-Estate-Evaluation"
+                        class="fas fa-link"></a>
+                    <a href="https://github.com/Souvik1406/Machine-Learning-Project-1-Real-Estate-Evaluation"
+                        class="fas fa-share"></a>
+                    <a href="https://github.com/Souvik1406/Machine-Learning-Project-1-Real-Estate-Evaluation"
+                        class="fas fa-search"></a>
                 </div>
             </div>
 
@@ -365,8 +427,8 @@
             <div class="icons">
                 <i class="fas fa-envelope"></i>
                 <h3>My email</h3>
-                <p class = "hell"> divinedigits69@gmail.com</p>
-                <p class = "hell">it2020025@rcciit.org.in</p>
+                <p class="hell"> divinedigits69@gmail.com</p>
+                <p class="hell">it2020025@rcciit.org.in</p>
             </div>
 
             <div class="icons">
@@ -391,13 +453,13 @@
                 <input type="hidden" name="_cc" value="divinedigits69@gmail.com">
                 <input type="hidden" name="_autoresponse" value="Will contact you soon!">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="email" name="email" placeholder="Email Address" class = "box" required>
+                <input type="email" name="email" placeholder="Email Address" class="box" required>
                 <input type="text" placeholder="name" class="box" required>
-          
+
                 <input type="number" placeholder="number" class="box" required>
 
                 <textarea name="" placeholder="message" id="" cols="30" rows="10" required></textarea>
-                 <input type="hidden" name="_next" value="https://souvikblog2-0new.netlify.app/thankyou.html">
+                <input type="hidden" name="_next" value="https://souvikblog2-0new.netlify.app/thankyou.html">
 
                 <input type="submit" class="btn" value="send message">
 
