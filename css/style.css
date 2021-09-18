@@ -600,7 +600,7 @@ header .follow a:hover{
 	cursor: pointer;
 }
 .chat_box{
-	width: 400px;
+	width: 300px;
 	height: 80vh;
 	position: fixed;
 	bottom: 100px;
