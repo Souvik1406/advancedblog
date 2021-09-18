@@ -605,7 +605,7 @@ header .follow a:hover{
 	position: fixed;
 	bottom: 100px;
 	right: 30px;
-	background:#dedede;
+	background:#e0b26c;
 	z-index: 1000;
 	transition: all 0.3s ease-out;
 	transform: scaleY(0);
