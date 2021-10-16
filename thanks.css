@@ -8,6 +8,13 @@ font-family: 'Righteous', cursive;
 	overflow:hidden;
 }
 
+.newAlign{
+	align-items : center;
+	justify-content : center;
+	text-align : center;
+	
+}
+
 .box
 {
 	width:700px;
