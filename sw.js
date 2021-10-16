@@ -3,6 +3,7 @@ self.addEventListener('install',function(event){
         caches.open('sw-cache').then(function(cache){
             return cache.add('index.html',
             'css/style.css',
+            'thanks.css',
             'js/script.js',
             'thankyou.html',
             'images/about-img.jpg',
