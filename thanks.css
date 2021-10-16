@@ -18,6 +18,8 @@ font-family: 'Righteous', cursive;
 .box
 {
 	align-items : center;
+	text-align : center;
+	justify-content : center;
 	width:700px;
 	height:400px;
 	background:#000;
